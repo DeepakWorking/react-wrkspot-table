@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+  margin: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.action-bar-wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.action-bar-form {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+}
+.country-input {
+  font-size: large;
+  padding: 10px;
+  border: 3px solid lightgray;
+}
+.country-select {
+  font-size: large;
+  padding: 10px;
+  width: 150px;
+  border: 3px solid lightgray;
+}
+.clear-button {
+  width: 40px;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid grey;
+  font-size: large;
+  padding: 10px;
+  width: 60px;
+  color: blue;
+}
+.countries-button {
+  font-size: large;
+  padding: 10px;
+  background: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  border-radius: 6px;
+}
+.country-table {
+  width: 100%;
+  min-height: 300px;
+  border-collapse: collapse;
 }
 
-.App-link {
-  color: #61dafb;
+.header-cell {
+  padding: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.countries.cell {
+  padding: 8px;
 }
